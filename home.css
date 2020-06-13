@@ -1,0 +1,1256 @@
+*,
+*:after,
+*::before{
+    box-sizing: border-box;   
+}
+
+html{
+    background-color: rgb(241, 241, 241);
+    
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    
+    
+}
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+
+.sticky{
+    right: 0;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(242, 7, 50);   
+    display: flex;
+    padding-right: 5%;
+    padding-left: 5%;
+    justify-content: space-between;   
+    align-items: center;
+    background-color: rgb(242, 7, 50);
+    width: 45%;
+    height: 85px;
+}
+
+
+
+a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sticky a {
+    
+    
+    
+    display: block;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.sticky .icon{
+    
+    left: 20%;
+    display: none;
+    
+}
+
+
+
+.intro-text-field {
+    position: relative;
+    height: 928px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(13, 29, 38);
+}
+
+.intro-text {
+    
+    
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    color: white;
+    font-weight: 200;
+    font-size: 70px;
+    -webkit-animation: fadein 3s;
+    animation: fadein 3s;
+    
+}
+
+.dev-text h1{
+    font-weight: 200;
+}
+
+
+
+
+.self-intro {
+    width: 35%;
+    position: absolute;
+    left: 14%;
+    font-size: 35px;
+    color: white;
+    font-weight: 200;
+    top: 45%;
+    -webkit-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+.home-img{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    right: 0;
+    left: 60%;
+    top: 45%;
+    animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    
+}
+
+@keyframes fadein {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes scalein{
+    from{scale: 0;}
+    to{scale: 1;}
+}
+
+.hr-line{
+    display: none;
+}
+
+.intro-img{
+    
+    max-width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 880px){
+    /* for tablets */
+
+    
+
+    
+
+    .sticky{
+        
+        padding-left: 5%;
+        padding-right: 5%;
+        position: fixed;
+        top: 0;
+        
+        width: 100%;
+    }
+
+    
+
+    
+
+    .hr-line{
+        margin-top: 20%;
+        display: flex;
+    }
+
+    .intro-text-field{
+        height: 500px;
+    }
+    
+
+    .intro-text{
+        
+        top: 25%;
+        width: 50%;
+        position: relative;
+        font-size: 40px;
+    }
+
+    .self-intro{
+        position: relative;
+        top: 25%;
+        left: 15%;
+        font-size: 25px;
+    }
+
+    .home-img{
+        width: 45%;
+        height: 50%;
+        position: relative;
+        top: 30%;
+        left: 45%;
+        
+    }
+}
+
+
+
+@media only screen and (max-width: 500px){
+
+   
+    
+    
+
+    .sticky{
+        padding-left: 5%;
+        padding-right: 5%;
+        position: fixed;
+        top: 0;
+        
+        width: 100%;
+
+    }
+
+    nav{
+        
+        width: 100%;
+    }
+
+    .sticky a:not(:first-child ) {display: none;}
+    .sticky a.icon{
+        margin-left: 20%;
+        float: right;
+        display: block;
+    }
+
+    .hr-line{
+        margin-top: 50%;
+        display: flex;
+    }
+
+    .sticky{
+        top: 0;
+        
+        width: 100%;
+    }
+
+    .intro-text{
+        font-size: 32px;
+    }
+
+    
+
+    .intro-text-field{
+        height: 500px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        position: relative;
+        margin-top: 20%;
+    }
+
+    .intro-text{
+        width: 80%;
+        top: 10%;
+    }
+    
+
+    .self-intro{
+        top: 15%;
+        width: 80%;
+        left: 10%;
+        font-size: 20px;
+    }
+
+    .home-img{
+        left: 5%;
+        width: 90%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sticky.responsive {
+        padding-top: 15%;
+        display: grid;
+        width: 100%;
+        /*height: 100%;*/
+        position: fixed;
+        animation: fullscreen 1s forwards ;
+        
+        -webkit-animation: fullscreen 1s forwards;
+    }
+
+    @keyframes fullscreen{
+        from{
+            height: 85px;
+
+        }
+        to{
+            height: 100%;
+        }
+    }
+    .sticky.responsive a.icon {
+        position: absolute;
+        
+        margin-left: 75%;
+    }
+    .sticky.responsive a {
+        left: 0;
+        right: 0;
+      display: list-item;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+
+.dev-intro {
+   
+    
+    position: relative;
+    margin-top: 12%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    
+    
+    
+    
+    overflow: hidden;
+}
+
+.dev-text {
+   
+    
+    
+    font-weight: 250;
+    font-size: 21px;
+    
+    width: 45%;
+
+    opacity: 1;
+    margin-bottom: 30%;
+}
+
+
+
+
+
+
+.dev-image {
+    
+        
+        position: absolute;
+        width: 30%;
+        
+        
+        
+        top: 10%;
+        left: 60%;
+        
+}
+
+.dev-image {
+    transform: translateX(150%);
+}
+
+.dev-image img {
+
+    
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.dev-shape {
+    
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background-color: red;
+    opacity: 50%;
+    top: 50%;
+    z-index: 1;
+    left: 60%;
+    overflow: hidden;
+}
+
+.dev-shape {
+    transform: translateY(-200%);
+}
+
+@media only screen and (max-width: 880px){
+
+    .dev-intro {
+        margin-top: 20%;
+        
+        left: 10%;
+        right: 10%;
+        width: 80%;
+        
+        margin-bottom: 0;
+        
+    }
+
+    .dev-text{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .dev-image{
+        
+        
+        position: relative;
+        width: 80%;
+
+        height: 80%;
+        left: 10%;
+        right: 10%;
+
+        
+    }
+
+    .dev-shape{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    /* for mobiles */
+
+    .dev-intro{
+        margin-top: 20%;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+    }
+
+    .dev-text{
+        font-size: 18px;
+        width: 100%;
+    }
+}
+
+
+.development{
+    
+    
+    position: relative;
+    overflow: hidden;
+    margin-top: 15%;
+    width: 90%;
+    height: 100%;
+    
+    
+}
+
+.development-text{
+   
+    
+    padding: 5% 5%;
+    background-color: rgb(13, 29, 38);
+    font-size: 27px;
+    font-weight: 200;
+    color: white;
+    width: 50%;
+    overflow: hidden;
+}
+
+.development-text ul{
+    margin: 25px
+}
+
+.development-image {
+    position: absolute;
+    
+    width: auto;
+    left: 70%;
+    right: 10%;
+    top: 5%;
+    
+    
+}
+
+.development-image {
+    transform: translateX(-200%);
+}
+
+
+.development-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.development-shape {
+    position: absolute;
+    background-color: red;
+    opacity: 50%;
+    top: 56%;
+    width: 30%;
+    height: 50%;
+    left: 70%;
+    z-index: 1;
+    
+    
+}
+
+.development-shape{
+    
+    transform: translateX(300%);
+}
+
+@media only screen and (max-width: 880px){
+
+    .development{
+        position: relative;
+        margin-top: 30%;
+        
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .development-text{
+        width: 100%;
+    }
+
+    .development-image{
+        margin-top: 5%;
+        position: relative;
+        padding: 10%;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
+
+    .development-shape{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    /* for mobiles */
+    .development{
+        height: 100%;
+        
+    }
+
+
+    .development-text{
+        
+        width: 100%;
+        
+        font-size: 20px;
+    }
+
+    .development-image{
+        width:  90%;
+        left: 5%;
+    }
+}
+
+
+
+.gamedevelopment{
+    
+    margin-top: 15%;
+    left: 10%;
+    right: 10%;
+    position: relative;
+    width: 80%;
+    height: 700px;
+    
+    overflow: hidden;
+    
+}
+
+.gamedev-text h1{
+    margin-bottom: 50px;
+    font-weight: 200;
+}
+
+.gamedev-text{
+    position: absolute;
+    
+    font-weight: 200;
+    font-size: 21px;
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.gamedev-image{
+    position: absolute;
+    
+    width: 50%;
+    height: 441px;
+    left: 60%;
+
+}
+
+.gamedev-image {
+    transform: translateX(150%);
+}
+
+
+.gamedev-image img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.gamedev-shape{
+    position: absolute;
+    width: 524px;
+    height: 335px;
+    background-color: red;
+    opacity: 50%;
+    left: 50%;
+    margin-top: 217px;
+    z-index: -1;
+}
+
+.gamedev-shape{
+    transform: translateY(-150%);
+}
+
+@media only screen and (max-width: 880px){
+
+    .gamedevelopment{
+        margin-top: 20%;
+        
+        
+        height: 100%;
+        left: 10%;
+        right: 10%;
+        width: 80%;
+    }
+
+    .gamedev-text{
+        text-align: justify;
+        clear: both;
+        position: relative;
+        width: 100%;
+    }
+
+    .gamedev-image{
+        margin-top: 10%;
+        position: relative;
+        left: 10%;
+        right: 10%;
+        width: 70%;
+        
+        
+    }
+
+    .gamedev-shape{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .gamedevelopment{
+        
+        margin-top: 20%;
+        height: 100%;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        
+    }
+
+    .gamedev-text{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .gamedev-image{
+        
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        
+    }
+
+    .gamedev-image img {
+        max-height: 90%;
+        transform: scale(1);
+    }
+}
+
+.deeplearning {
+    position: relative;
+    width: 95%;
+    height: 637px;
+    margin-top: 15%;
+    left: 5%;
+    overflow: hidden;
+    
+}
+
+.deepdev-image{
+    position: absolute;
+    margin-top: 131px;
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.deepdev-image {
+    transform: translateX(-150%);
+}
+
+.deepdev-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.deepdev-text{
+    width: 30%;
+    position: absolute;
+    margin-top: 200px;
+    margin-left:750px;
+    font-weight: 200;
+    overflow: hidden;
+    font-size: 21px;
+}
+
+.deepdev-text h1{
+    font-weight: 200;
+}
+
+.deepdev-shape {
+    width: 322px;
+    height: 559px;
+    background-color: red;
+    opacity: 50%;
+    margin-left: 302px;
+}
+
+.deepdev-shape {
+    transform: translateY(-150%);
+}
+
+@media only screen and (max-width: 880px){
+
+    .deeplearning{
+        left: 10%;
+        right: 10%;
+        width: 80%;
+        height: 100%;
+        
+        margin-top: 25%;
+        
+    }
+
+    .deepdev-image{
+       
+        position: relative;
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .deepdev-text{
+       
+        position: relative;
+        text-align: justify;
+        margin-top: 0px;
+        
+        margin-left: 0;
+        
+        width: 100%;
+    }
+
+    .deepdev-shape{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .deeplearning{
+        
+        margin-top: 20%;
+        height: 100%;
+        
+        left: 5%;
+        right: 5%;
+        
+    }
+
+    .deepdev-text{
+        margin-top: 10%;
+        overflow: hidden;
+        width: 100%;
+    }
+
+
+    .deepdev-image{
+        
+        width: 90%;
+        left: 5%;
+        right: 5%;
+       
+        
+        
+        
+    }
+
+    .deepdev-image img{
+        max-height: 90%;
+        transform: scale(1);
+    }
+
+    .deepdev-text{
+        font-size: 18px;
+        width: 100%;
+    }
+}
+
+.projects {
+    
+    position: relative;
+    width: 90%;
+    margin-bottom: 20%;
+    margin-top: 20%;
+    overflow: hidden;
+    
+
+}
+
+.projects-text {
+    background-color: rgb(242, 7, 50);
+    font-weight: 200;
+    color: white;
+    
+    font-size: 21px;
+    padding: 5%;
+    margin-top: 150px;
+    width: 55%;
+    float: left;
+}
+
+.projects-text h1 {
+    font-weight: 200;
+    margin-bottom: 8%;
+}
+.projects-image{
+    
+    width: 30%;
+    
+    margin-left: 70%;
+    margin-top: 207px;
+}
+
+.projects-image {
+    position: absolute;
+    transform: translateX(150%);
+}
+
+.projects-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.projects-shape {
+    position: absolute;
+    width: 328px;
+    height: 446px;
+    background-color: rgb(242, 7, 50);
+    opacity: 50%;
+    left: 82%;
+}
+
+.projects-shape{
+    transform: translateY(150%);
+}
+
+@media only screen and (max-width: 880px){
+
+    .projects{
+        width: 100%;
+        
+        
+    }
+
+    .projects-text{
+        clear: both;
+        width: 100%;
+    }
+
+    .projects-image{
+        position: relative;
+        clear: both;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 15%;
+    }
+
+    .projects-shape{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .projects{
+        width: 100%;
+        
+        left: 0;
+        right: 0;
+    }
+
+    .projects-text{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .projects-image{
+        width: 100%;
+    }
+}
+
+
+.aboutme-intro{
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 20%;
+    overflow: hidden;
+    
+    
+    
+}
+
+.aboutme-image {
+    margin-top: 200px;
+    
+    width: 540px;
+    height: 360px;
+    position: absolute;
+}
+
+.aboutme-image{
+    transform: translateX(-150%)
+}
+
+.aboutme-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.aboutme-intro-text{
+    font-weight: 200;
+    width: 40%;
+    height: auto;
+    background-color: rgb(13, 29, 38);
+    margin-left: 55%;
+    padding: 5%;
+    color: white;
+    overflow: hidden;
+}
+
+.aboutme-intro-text h1 ,h2 {
+    font-weight: 200;
+    margin-bottom: 100px;
+}
+
+.aboutme-shape{
+    position: absolute;
+    width: 365px;
+    height: 433px;
+    background-color: rgb(242, 7, 50);
+    opacity: 50%;
+    z-index: 1;
+    margin-left: 50px;
+
+}
+
+.aboutme-shape{
+    transform: translateY(-150%)
+}
+
+@media only screen and (max-width: 880px){
+
+    .aboutme-intro{
+        
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
+
+    .aboutme-image{
+        position: relative;
+        margin-top: 20%;
+        left: 10%;
+        width: 80%;
+        
+    }
+
+    .aboutme-intro-text{
+        
+        margin-top: 0%;
+        width: 100%;
+        text-align: justify;
+        position: relative;
+        margin-left: 0px;
+        padding-left: 25px;
+        padding-top: 25px;
+        
+    }
+    .aboutme-shape{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .aboutme-intro{
+        height: 100%;
+        width: 100%;
+        left:0%;
+        right: 0%;
+    }
+
+    .aboutme-intro-text{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.hobbies {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin-top: 15%;
+    left: 15%;
+    right: 5%;
+    overflow: hidden;
+    
+   
+    
+    
+}
+
+.hobbies-text{
+    font-weight: 200;
+    color: black;
+    width: 40%;
+    margin-top: 5%;
+   margin-bottom: 30%;
+}
+
+.hobbies-text h1 {
+    font-weight: 200;
+}
+
+.hobbies-image {
+    
+    position: absolute;
+    height: 80%;
+    left: 60%;
+    top: 5%;
+    
+}
+
+.hobbies-image {
+    transform: translateX(+200%);
+}
+
+.hobbies-image img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.hobbies-shape{
+    position: absolute;
+    width: 60%;
+    height: 40%;
+    background-color: rgb(242, 7, 50);
+    opacity: 50%;
+    left: 60%;
+    top: 45%;
+}
+
+.hobbies-shape{
+    transform: translateY(+150%);
+}
+
+
+@media only screen and (max-width: 880px){
+
+    .hobbies{
+        
+        margin-top: 10%;
+        height: 100%;
+        width: 70%;
+        right: 15%;
+        left: 15%;
+        
+    }
+
+    .hobbies-text{
+        text-align: justify;
+        float: none;
+        width: 100%;
+    }
+
+
+    .hobbies-image{
+       
+        margin-top: 20%;
+        position: relative;
+        left: 0
+        
+    }
+
+        .hobbies-shape{
+            display: none;
+        }
+    
+}
+
+@media only screen and (max-width: 500px){
+
+    .hobbies{
+        margin-top: 20%;
+        width: 90%;
+        left: 5%;
+        right: 5%;
+    }
+
+    .hobbies-text{
+        width: 100%;
+    }
+
+    .hobbies-image{
+        width: 80%;
+        height: 80%;
+        left:10%
+        
+        
+    }
+
+    
+
+}
+
+footer{
+    
+    margin-top: 20%;
+    width:auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(13, 29, 38);
+    padding: 2% 5%;
+    color: white;
+    font-size: 1em;
+}
+
+footer h1{
+    font-weight: 200;
+    
+}
+
+.footer{
+   
+    box-sizing: border-box;
+    font-weight: 200;
+    
+    
+    text-decoration: none;
+    
+}
+
+.footer .impressum{
+    width: 30%;
+}
+
+.footer .email{
+    width: 35%;
+}
+.footer .links{
+    width: 30%;
+}
+
+.footer li{
+    margin: 5% 0%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.insta-logo{
+    width: 10%;
+    fill: red;
+    
+    
+}
+
+.footer .impressum,
+.footer .email,
+.footer .links{
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media only screen and (max-width: 880px){
+
+    footer{
+        width: 100%;
+        font-size: 10px;
+        padding-left: 10%;
+        padding-right: 15%;
+        overflow: hidden;
+        font-size: 18px;
+    }
+
+    footer h1{
+        margin-bottom: 60px;
+    }
+
+    .footer .impressum,
+    .footer .email,
+    .footer .links{
+    
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    align-self: center;
+    text-align: center;
+    
+    }
+
+    .footer li, a{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    footer{
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 5%;
+        padding-left: 5%;
+    }
+
+    
+    .footer li, a{
+        left: 0;
+        text-align: left;
+        font-size: 15px;
+    }
+    
+}
