@@ -24,3 +24,9 @@ function myFunction() {
         
     }
 }
+
+function resizenav() {
+
+    var x = document.getElementById("navbar");
+    x.className = "sticky"
+}

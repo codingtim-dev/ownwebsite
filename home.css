@@ -94,7 +94,10 @@ a{
     font-weight: 200;
 }
 
-
+.linktext{
+    font-weight: 400;
+    color: black;
+}
 
 
 .self-intro {
@@ -964,12 +967,12 @@ a{
 
 .aboutme-shape{
     position: absolute;
-    width: 365px;
-    height: 433px;
+    width: 15%;
+    height: 50%;
     background-color: rgb(242, 7, 50);
     opacity: 50%;
     z-index: 1;
-    margin-left: 50px;
+    left: 0;
 
 }
 
