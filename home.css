@@ -278,6 +278,7 @@ a{
 
 @media screen and (max-width: 500px) {
     .sticky.responsive {
+        overflow: hidden;
         padding-top: 15%;
         display: grid;
         width: 100%;
@@ -402,7 +403,7 @@ a{
 
     .dev-text{
         width: 100%;
-        text-align: justify;
+        
     }
 
     .dev-image{
@@ -636,7 +637,7 @@ a{
     }
 
     .gamedev-text{
-        text-align: justify;
+        
         clear: both;
         position: relative;
         width: 100%;
@@ -763,7 +764,7 @@ a{
     .deepdev-text{
        
         position: relative;
-        text-align: justify;
+        
         margin-top: 0px;
         
         margin-left: 0;
@@ -783,6 +784,7 @@ a{
         margin-top: 20%;
         height: 100%;
         
+        width: 90%;
         left: 5%;
         right: 5%;
         
@@ -1001,7 +1003,7 @@ a{
         
         margin-top: 0%;
         width: 100%;
-        text-align: justify;
+        
         position: relative;
         margin-left: 0px;
         padding-left: 25px;
@@ -1101,7 +1103,7 @@ a{
     }
 
     .hobbies-text{
-        text-align: justify;
+        
         float: none;
         width: 100%;
     }

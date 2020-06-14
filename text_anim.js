@@ -13,10 +13,11 @@ window.addEventListener("scroll", function(){
 
 function myFunction() {
 
-    
+   
 
     var x = document.getElementById("navbar");
     if(x.className === "sticky"){
+        
         x.className += " responsive";
         
     }else{
