@@ -692,7 +692,7 @@ a{
 .deeplearning {
     position: relative;
     width: 95%;
-    height: 637px;
+    height: 100%;
     margin-top: 15%;
     left: 5%;
     overflow: hidden;
@@ -700,10 +700,11 @@ a{
 }
 
 .deepdev-image{
+    
     position: absolute;
     margin-top: 131px;
-    width: 40%;
-    height: 100%;
+    width: 35%;
+    height: 80%;
     float: left;
 }
 
@@ -718,9 +719,10 @@ a{
 
 .deepdev-text{
     width: 30%;
-    position: absolute;
-    margin-top: 200px;
-    margin-left:750px;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    margin-bottom: 20%;
     font-weight: 200;
     overflow: hidden;
     font-size: 21px;
@@ -731,11 +733,12 @@ a{
 }
 
 .deepdev-shape {
+    position: absolute;
     width: 17.6%;
     height: 100%;
     background-color: red;
     opacity: 50%;
-    margin-left: 302px;
+    left: 302px;
 }
 
 .deepdev-shape {
@@ -768,7 +771,7 @@ a{
         margin-top: 0px;
         
         margin-left: 0;
-        
+        left: 0;
         width: 100%;
     }
 
