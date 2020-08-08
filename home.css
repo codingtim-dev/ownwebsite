@@ -115,12 +115,11 @@ a{
 .home-img{
     position: absolute;
     width: 40%;
-    height: 50%;
+    height: 40%;
     right: 0;
-    left: 60%;
-    top: 45%;
-    animation: fadein 2s;
-    -webkit-animation: fadein 2s;
+    left: 55%;
+    top: 40%;
+    
     
 }
 
